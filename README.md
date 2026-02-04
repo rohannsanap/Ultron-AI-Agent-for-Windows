@@ -70,39 +70,6 @@ System Executor (Python Automation)
         ↓
 OS-Level Action + Feedback
 
-📁 Project File Structure
-
-Ultron/
-│
-├── 📂 backend/                          # Backend: AI & Automation Engine
-│   ├── 📄 final.py                     # Main backend script
-│   │                                   # - Flask API handling
-│   │                                   # - Gemini API integration
-│   │                                   # - Command validation
-│   │                                   # - System & file automation
-│   │
-│   ├── 📄 requirements.txt             # Python dependencies
-│   ├── 📄 .env                         # Environment variables (Gemini API key)
-│
-├── 📂 frontend/                         # Frontend: User Interface
-│   ├── 📂 src/
-│   │   ├── 📂 components/              # Reusable React components
-│   │   │   ├── 📄 Chat.jsx             # Chat-based interaction UI
-│   │   │   ├── 📄 VoiceInput.jsx       # Voice command input
-│   │   │   ├── 📄 Response.jsx         # AI/system response display
-│   │   │
-│   │   ├── 📄 App.jsx                  # Root React component
-│   │   ├── 📄 main.jsx                 # React entry point
-│   │
-│   ├── 📂 public/
-│   │   ├── 📄 index.html               # Base HTML file
-│   │
-│   ├── 📄 vite.config.js               # Vite configuration (HMR, proxy)
-│   ├── 📄 package.json                 # Frontend dependencies
-│
-├── 📂 assets/                           # UI images, icons, media resources
-│
-└── 📄 README.md                         # Project documentation
 
 🧠 Technologies Used
 🔹 Backend
