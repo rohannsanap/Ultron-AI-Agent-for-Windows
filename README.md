@@ -1,146 +1,94 @@
-🤖 Ultron – AI-Powered Desktop Automation Assistant
-📌 Project Overview
+﻿# 🤖 Ultron — Your AI-Powered Desktop Assistant
 
-Ultron is an intelligent AI-powered desktop assistant designed to automate routine system tasks using natural language voice or text commands.
-It bridges the gap between human intent and system-level execution, enabling users to interact with their operating system in a conversational manner.
+Ultron is an intelligent desktop assistant that leverages voice and text commands to automate routine PC tasks, improving productivity and user convenience., Ultron seamlessly interacts with the operating system to control applications, manage files, adjust system settings, and more — all through natural language.
 
-Ultron improves productivity, accessibility, and efficiency by eliminating manual navigation and repetitive actions.
+---
 
-🎯 Objectives
+## 🚀 Features
 
-Automate common desktop operations through natural language.
+### 🛠️ System Control & Automation
+- Open, close, and switch between applications.
+- Create, delete, move, and rename files or folders.
+- Adjust system settings like **volume**, **brightness**, and **network connections**.
 
-Enable voice-based and text-based system interaction.
+### 🧠 AI-Powered Interaction
+- Accepts both **voice** and **text** commands.
+- Utilizes **Natural Language Understanding (NLU)** for intelligent task execution.
+- Provides real-time **feedback** and **confirmation messages**.
 
-Ensure safe and controlled execution of system commands.
+### 🔐 Security & Permissions
+- Restricts access to **sensitive files** and **applications**.
+- Implements **authentication** for critical operations.
 
-Provide cross-platform extensibility (Windows, Linux, macOS).
+---
 
-Demonstrate real-world integration of AI with system automation.
+## 🧩 Project Structure
 
-🚀 Key Features
-🛠️ System Control & Automation
+Ultron/ ├── backend/ │ └── final.py # Main backend script using Gemini API for NLP ├── frontend/ │ └── [Vite project] # React-based frontend using Vite ├── README.md
 
-Create, delete, move, and rename files and folders.
+yaml
+Copy
+Edit
 
-Open, close, and switch between applications.
+---
 
-Adjust system settings such as:
+## 🧠 Powered By
 
-Volume
+- **Google Gemini API** — For advanced Natural Language Processing
+- **SpeechRecognition** & **Pyttsx3** — Voice input and speech feedback
+- **PyAutoGUI**, **subprocess**, **os**, **shutil** — For system-level automation
+- **React + Vite** — Frontend UI with responsive and real-time feedback
 
-Brightness
+---
 
-Network-related actions (extendable)
+## 🛠️ How to Run
 
-🧠 AI-Powered Interaction
+### 🐍 Backend (Python)
+1. Navigate to the `backend` folder:
+   ```bash
+   cd backend
+Install dependencies:
 
-Accepts voice and text commands.
-
-Uses Natural Language Understanding (NLU) via Google Gemini API.
-
-Converts unstructured human commands into structured executable actions.
-
-Provides real-time feedback and confirmations.
-
-🔐 Security & Safety
-
-Restricts access to protected system directories.
-
-Uses command validation and denylist rules.
-
-Prevents accidental destructive operations.
-
-Supports authentication prompts for sensitive actions.
-
-🧩 Project Architecture
-
-Ultron follows a modular layered architecture with clear separation of concerns.
-User (Voice / Text)
-        ↓
-Frontend (React + Vite)
-        ↓
-Backend API (Flask)
-        ↓
-Gemini AI (NLU Processing)
-        ↓
-Validation & Safety Layer
-        ↓
-System Executor (Python Automation)
-        ↓
-OS-Level Action + Feedback
-
-
-🧠 Technologies Used
-🔹 Backend
-
-Python – Core automation and system control
-
-Flask – REST API layer
-
-Google Gemini API – Natural Language Understanding
-
-os, shutil, subprocess – File & system operations
-
-PyAutoGUI – GUI automation (fallback)
-
-pyttsx3 – Offline text-to-speech feedback
-
-🔹 Frontend
-
-React – Component-based UI
-
-Vite – Fast build tool with Hot Module Replacement (HMR)
-
-Web Speech API – Speech-to-text input
-
-Tailwind CSS – Styling and responsiveness
-
-⚙️ Workflow (Input → Processing → Output)
-
-User provides a voice or text command.
-
-Frontend sends the command to Flask backend.
-
-Backend sends command to Gemini API.
-
-Gemini converts natural language into structured instruction.
-
-Backend validates command for safety.
-
-Executor module performs system-level action.
-
-Response is returned to frontend and spoken aloud.
-
-🛠️ How to Run the Project
-🐍 Backend (Python)
-cd backend
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run the assistant:
+
+bash
+Copy
+Edit
 python final.py
+🌐 Frontend (Vite + React)
+Navigate to the frontend folder:
 
-🌐 Frontend (React + Vite)
+bash
+Copy
+Edit
 cd frontend
+Install dependencies:
+
+bash
+Copy
+Edit
 npm install
+Start the dev server:
+
+bash
+Copy
+Edit
 npm run dev
+🛡️ Security
+Authentication prompts before executing sensitive tasks.
 
-🛡️ Security Considerations
-
-Sensitive system directories are protected.
-
-Commands are validated before execution.
-
-Gemini API key is stored securely using environment variables.
-
-Authentication can be enabled for critical operations.
+Files marked as protected cannot be altered or accessed without proper authorization.
 
 💡 Future Enhancements
+Add context-aware multitasking capabilities.
 
-Context-aware multitasking.
+Introduce scheduling and reminders.
 
-Task scheduling and reminders.
+Integrate with cloud storage and third-party services.
 
-Cloud and third-party service integration.
-
-Plugin-based automation modules.
-
-Enhanced cross-platform support.
+Expand cross-platform support (Linux/macOS).
+# Ultron-AI-Agent-for-Windows
